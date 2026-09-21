@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #
 # The cluster catalogue: the office applications a person keeps their working life in, and the
 # knowledge that makes each one actually run.

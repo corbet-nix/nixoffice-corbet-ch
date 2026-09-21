@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Checks every non-null nixpkgs attribute in lib/tools.nix resolves.
 #   nix-instantiate --eval --strict experiments/validate-nixpkgs-names.nix -A missing   # => [ ]
 { nixpkgs ? <nixpkgs> }:

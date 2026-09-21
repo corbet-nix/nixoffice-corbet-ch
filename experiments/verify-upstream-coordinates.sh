@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # Verify every image coordinate in ../lib/applications.nix against the registry that serves it --
 # and, with --tags, show what upstream is actually shipping.
 #

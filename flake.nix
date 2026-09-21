@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 {
   description = "nixoffice — where the written work happens, declared: the office applications a fleet runs, and the documents half of a workstation";
 
@@ -18,7 +19,7 @@
     # THE APP GRAMMAR AND CONSUMER FACTORY THIS REPOSITORY CONSUMES. Checks render through the real
     # grammar, and the exported cluster module is constructed by the matching factory.
     nixk3s = {
-      url = "github:julian-corbet/nixk3s-corbet-ch";
+      url = "github:corbet-nix/nixk3s-corbet-ch";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.nixidy.follows = "nixidy";
     };

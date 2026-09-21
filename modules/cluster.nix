@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #
 # nixoffice's cluster surface: declare the office applications this fleet runs, and render them.
 #

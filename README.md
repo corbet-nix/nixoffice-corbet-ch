@@ -9,7 +9,7 @@ typesetting service, record platforms. And a **host** surface for the office sof
 installs on a machine: suites, typesetting tools, prose editors and document viewers.
 
 The cluster half renders no Kubernetes object of its own. Everything expressible as an app is
-expressed in [nixk3s](https://github.com/julian-corbet/nixk3s-corbet-ch)'s app grammar; what this
+expressed in [nixk3s](https://github.com/corbet-nix/nixk3s-corbet-ch)'s app grammar; what this
 repository adds is the one thing that grammar cannot know — what each *kind* of office application
 is, which engine it needs and cannot run, and which of them is still working after the request was
 answered.
@@ -195,7 +195,7 @@ application really can exist on some channels and not others.
 The scope is stated as a test, not a list: this half owns what a **person consumes visually**. A
 suite you click around in, a typesetter whose output you read, an editor you write prose in, a viewer
 you open a PDF with. Anything you only ever script against belongs in
-[nixdev](https://github.com/julian-corbet/nixdev-corbet-ch) instead — pypdf and pdfplumber are
+[nixdev](https://github.com/corbet-nix/nixdev-corbet-ch) instead — pypdf and pdfplumber are
 libraries, not documents.
 
 - **NixOS:** full. Selections resolve to nixpkgs attributes and install via
@@ -205,7 +205,7 @@ libraries, not documents.
 - **Flatpak, either platform:** publishes `nixoffice.flatpakApps` as `{ id; remoteName; remoteUrl; }`
   — id and remote **together**, never a bare id list, because a bare id can only assume Flathub and
   that assumption is wrong often enough to matter. Nothing here installs them;
-  [nixflat](https://github.com/julian-corbet/nixflat-corbet-ch) is written against exactly this
+  [nixflat](https://github.com/corbet-nix/nixflat-corbet-ch) is written against exactly this
   shape.
 
 Mail and calendar are absent on purpose, not by oversight — see
@@ -295,21 +295,21 @@ stands.
 ## Related projects
 
 Part of the same independently-usable module family:
-[nixk3s](https://github.com/julian-corbet/nixk3s-corbet-ch) (the app grammar this consumes, and the
+[nixk3s](https://github.com/corbet-nix/nixk3s-corbet-ch) (the app grammar this consumes, and the
 band model its slots answer to),
-[nixdb](https://github.com/julian-corbet/nixdb-corbet-ch) (the database tier that runs the engines
+[nixdb](https://github.com/corbet-nix/nixdb-corbet-ch) (the database tier that runs the engines
 this repository names and refuses to operate),
-[nixnotes](https://github.com/julian-corbet/nixnotes-corbet-ch) (the personal knowledge surface, and
+[nixnotes](https://github.com/corbet-nix/nixnotes-corbet-ch) (the personal knowledge surface, and
 where the scale-to-zero calibration started),
-[nixflat](https://github.com/julian-corbet/nixflat-corbet-ch) (installs the Flatpak channel this
+[nixflat](https://github.com/corbet-nix/nixflat-corbet-ch) (installs the Flatpak channel this
 module only names),
-[nixmsg](https://github.com/julian-corbet/nixmsg-corbet-ch) (a catalogue of the same shape, for
+[nixmsg](https://github.com/corbet-nix/nixmsg-corbet-ch) (a catalogue of the same shape, for
 messengers),
-[nixdev](https://github.com/julian-corbet/nixdev-corbet-ch) (operator tooling — where the document
+[nixdev](https://github.com/corbet-nix/nixdev-corbet-ch) (operator tooling — where the document
 *libraries* live),
-[nixfont](https://github.com/julian-corbet/nixfont-corbet-ch) (fonts as a shared concern) and
-[nixprint](https://github.com/julian-corbet/nixprint-corbet-ch) (printing declared).
+[nixfont](https://github.com/corbet-nix/nixfont-corbet-ch) (fonts as a shared concern) and
+[nixprint](https://github.com/corbet-nix/nixprint-corbet-ch) (printing declared).
 
-## License
+## Licence
 
-MIT License &copy; 2026 Julian Corbet
+Outbound licence is `MIT OR Apache-2.0`. See `LICENSE-MIT` and `LICENSE-APACHE`; every source file carries `SPDX-License-Identifier: MIT OR Apache-2.0`.
